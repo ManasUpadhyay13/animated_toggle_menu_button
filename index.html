@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated menu toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="upper1"></div>
+        <div class="upper2"></div>
+        <div class="upper3"></div>
+    </div>
+</body>
+<script>
+    var menu = document.querySelector(".menu")
+
+    menu.onclick = function(){
+        menu.classList.toggle('active')
+    }
+</script>
+</html>

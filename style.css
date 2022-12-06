@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(167, 223, 223);
+
+}
+
+.menu{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    overflow: hidden;
+}
+
+.upper1 , .upper2 , .upper3{
+    background: blueviolet;
+    transition: 0.5s;
+}
+
+.upper1{
+    position: relative;
+    top: 50px;
+    left: 30px;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.upper2{
+    position :relative;
+    top: 90px;
+    left: 30px;
+    width: 150px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.upper3{
+    position :relative;
+    top: 130px;
+    left: 30px;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.menu.active .upper1{
+   width: 150px;
+   top: 90px;
+   transform : rotate(45deg);
+   transition-delay: 0.1s;
+}
+
+.menu.active .upper2{
+    transform: translateX(200px);
+}
+
+.menu.active .upper3{
+   width: 150px;
+   top: 70px;
+   transform : rotate(315deg);
+   transition-delay: 0.2s;
+}
